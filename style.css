@@ -1,6 +1,74 @@
-.box-purple {
-    background-color: #3F3B6C;
-    height: 100px;
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf')
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('../assets/fonts/static/Inter-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'Inter ExtraBold';
+    src: url('../assets/fonts/static/Inter-ExtraBold.ttf')
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+body {
+    padding: 4rem 2rem;
+    background-color: hsl(36, 100%, 99%);
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.navigation__container {
+    display: none;
+    flex-grow: 1;
+}
+.navigation__brand {
+    flex-grow: 1;
+}
+
+.navigation__container li {
+    list-style: none;
+}
+
+.navigation__container a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'inter', sans-serif;
+    color: hsl(236, 13%, 42%);
+}
+
+.navigation__container a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.navigation__brand img {
+    height: 4rem;
+}
+@media(min-width: 768px) {
+    .navigation__container {
+        display: block;
+    }
+    .navigation__icon {
+        display: none;
+    }
+}
+.navigation__container ul {
+    display: flex;
+    justify-content: space-around;
 }
 .logo  {
     height: 70px;
@@ -8,5 +76,51 @@
 }
 
 .product {
-    width: 600px;
+    width: 100%;
 }
+
+h1 {
+    font-size: 110px;
+    font-family: 'Italianno', cursive;
+    text-align: left;
+    
+}
+
+h2 {
+   text-align: right; 
+   font-size: 60px;
+   font-weight: 500px;
+   padding-bottom: 100px;
+   line-height: 0px;
+}
+h3 {
+   padding-top: 90px;
+   font-size: 10px;
+   
+}
+h4 {
+    font-size: 10px;
+}
+/* body  {
+    background-color: #DBA39A;
+} */
+span {
+    font-style: italic;
+    
+}
+.card   {
+    width: 500px;
+}
+.message {
+    background-color: #FFC1B6;
+}
+.mus {
+    text-align: center;
+    padding-bottom: 4rem;
+    font-family: 'Passion One', cursive;
+}
+
+.card-body  {
+    background-color: #FFDCB8;
+}
+
